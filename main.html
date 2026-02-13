@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="heart-container"></div>
+
+    <div id="lock-screen">
+        <div class="glass-card">
+            <div class="lock-icon"><span class="heart-pulse">❤</span></div>
+            <h2>Yours, Truly.</h2>
+            <p>A small piece of my heart, for the one who holds the key.</p>
+            
+            <div class="input-group">
+                <input type="password" id="password-input" placeholder="Enter our anniversary to unlock." autofocus>
+                <div id="togglePassword" class="toggle-eye">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </div>
+            </div>
+
+            <button class="unlock-btn" onclick="checkPassword()">OPEN GIFT</button>
+            <p id="error-msg" class="error-text">That's not it, try again...</p>
+        </div>
+    </div>
+
+    <div id="envelope-overlay" style="display: none;">
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+            <div class="envelope" id="main-envelope">
+                <div class="heart-seal">❤</div>
+            </div>
+            <p class="click-me">Click to open your gift!</p>
+        </div>
+    </div>
+
+    <div id="main-content-wrapper" style="display: none;">
+        <header>
+            <div class="header-content">
+                <p class="recipient-name">To my forever favorite Babi, Hannah</p>
+
+                <h1 class="shimmer-title">Happy Valentine's Day</h1>
+                <p id="intro-greet">to the most beautiful and kindest person I have ever met</p>
+                <div class="scroll-container">
+                    <p class="scroll-text">Scroll down to see our best times together...</p>
+                    <div class="heart-icon pulse">❤</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="moment-container">
+            <div class="moment">
+                <div class="photo-frame"><img src="images/1.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>Where it started</h3>
+                    <p>Everything changed in an instant when I met you my Babi. Life suddenly felt so much brighter with you, I know we started dating online because of our long distance but I hope you dont mind it, please hold on to me tight and wait for me to reach you, having fun with you by playing together online makes my day everyday and motivates me to study and do my best for you to be happy.</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="images/2.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>Shared Joy</h3>
+                    <p>Your smile and laughter always fills my heart with warmth and happiness, the way you encourage me whenever I feel so down, depressed and disappointed in myself makes my heart incredibly attached to you, I just know that you're the one for me and I can't let go of you even if we fight sometimes, but still thats a part of a relationship and I know that it will only help us grow together!</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="images/3.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>Side By Side</h3>
+                    <p>It doesn't matter where we go, as long as I'm with you I feel like I can do anything for you. Whenever and wherever I am I know I will always be happy as long as you are around giving me updates, calls and text. The way you support me in everything makes me feel so lucky and blessed by God for making me meet you an angel on earth.</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="images/4.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>My Safe Place</h3>
+                    <p>I feel safe and happy whenever I talk to you, I felt so happy meeting you for the first time, and having both our first kiss gotten by ourselves hehehe, I want to hug you more and kiss you more to let you know how much Im obsessed and inlove with you, I miss you so much baby I wanna shout and let everyone know that you are the best girlfriend ever!!<span class="heart-red">❤</span></p></p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="images/5.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>Always Yours</h3>
+                    <p>During the past 5 years I have been with you I have loved you so much, and I love you even more now, Im so proud of you for knowing everthing about me and doing your best to also make me happy and not make me sad, I wanna make more efforts for you be it small and big things I want to make your heart flutter and give your stomach some butterflies hehehe, I know I'm not that good looking yet or my body isnt exactly in goodshape but I will work hard for you to make you also obsessed with me. I love you so much baby! I am so glad I found you, and I want to be with you forever so I hope when I have enough money to support and marry you, I hope you will say yes and stay by my side forever being the best partner and wife I could ever ask for.
+                </div>
+            </div>
+        </div>
+
+        <div id="typing-container">
+            <p id="typing-text"></p>
+        </div>
+
+        <footer>
+            <p>You will always be my favorite person<span class="heart-red">❤</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
